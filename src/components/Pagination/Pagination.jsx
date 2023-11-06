@@ -41,9 +41,7 @@ const Pagination = ({ itemList }) => {
         const tempCountries = []
         for (let i = 0; i < itemsPerPage; i++) {
             if ((i + (currPage * itemsPerPage) - itemsPerPage) < itemList.length) {
-                console.log(i + (currPage * itemsPerPage) - itemsPerPage)
                 tempCountries.push(itemList[i + (currPage * itemsPerPage) - itemsPerPage])
-                console.log(tempCountries[1])
             }
         }
 

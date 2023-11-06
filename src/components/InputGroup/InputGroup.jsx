@@ -119,7 +119,6 @@ const InputGroup = (props) => {
             }
         } catch (error) {
             setData(['error'])
-            console.log('error')
         }
     }
 
