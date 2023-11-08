@@ -141,11 +141,11 @@ const InputGroup = (props) => {
             <div className='inputs'>
                 <div className="input-field">
                     <input id="field" type="text" placeholder='Language' onChange={handleLanguageChange} disabled={disabled.lang} value={language} />
-                    <p>Ex: spanish</p>
+                    <p>Ex: Spanish</p>
                 </div>
                 <div className="input-field">
                     <input id="field" type="text" placeholder='Currency' onChange={handleCurrencyChange} disabled={disabled.curr} value={currency} />
-                    <p>Ex: usd, peso</p>
+                    <p>Ex: USD, Peso</p>
                 </div>
                 <div className="input-field">
                     <input id="field" type="text" placeholder='Region' onChange={handleRegionChange} disabled={disabled.reg} value={region} />
@@ -153,7 +153,7 @@ const InputGroup = (props) => {
                 </div>
                 <div className="input-field name">
                     <input id="field" type="text" placeholder='Name' onChange={handleNameChange} disabled={disabled.nm} value={name} />
-                    <p>placeholder</p>
+                    <p>Ex: France</p>
                 </div>
             </div>
             <div className='buttonBox'>

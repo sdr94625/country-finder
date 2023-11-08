@@ -17,6 +17,7 @@ const ListItem = (props) => {
     return (
         <>
             <div onClick={openPopup} className="listItem">
+                <p className='index'>{props.index}.</p>
                 <p>{country.name.common}</p>
             </div>
 

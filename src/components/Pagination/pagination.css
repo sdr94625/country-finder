@@ -59,8 +59,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+        column-count: 2;
         width: 90vw;
-        height: 45vh;
+        height: 40vh;
         padding: 0;
         margin: 0;
     }

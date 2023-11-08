@@ -5,7 +5,6 @@ import './country-list.css';
 const CountryList = (props) => {
 
     const countries = props.countries
-    console.log(countries)
 
     if (countries[0] == 'error') {
         return (
@@ -17,7 +16,7 @@ const CountryList = (props) => {
     const tempList = [];
     countries.map((country) => {
         if (country.independent) {
-            tempList.push(<ListItem key={country.cca3} country={country} />)
+            tempList.push(<ListItem index={tempList.length + 1} key={country.cca3} country={country} />)
         }
     })
     return (

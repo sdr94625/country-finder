@@ -13,12 +13,16 @@
 
 .listItem{
     display: flex;
-    justify-content: center;
+    justify-content: center space-around;
     width: 15%;
     padding: .5rem;
     margin-bottom: 5px;
     cursor: pointer;
    background-color: #d4d4d4;
+}
+
+.index{
+  padding-right: .5rem;
 }
 
 .popup {
@@ -99,8 +103,9 @@
 .listItem{
     display: flex;
     justify-content: center;
-    width: 15%;
-    padding: .5rem;
+    width: 20%;
+    padding-left: .25rem;
+    padding-right: .25rem;
     margin-bottom: 5px;
     cursor: pointer;
    background-color: #d4d4d4;
