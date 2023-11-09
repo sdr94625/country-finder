@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import './pagination.css'
 
 const Pagination = ({ itemList }) => {
@@ -21,7 +20,7 @@ const Pagination = ({ itemList }) => {
     const mediaQuery = matchMedia("(max-width: 650px)")
     const smallScreen = widthCheck(mediaQuery)
 
-    const itemsPerPage = smallScreen ? 5 : 6;
+    const itemsPerPage = smallScreen ? 4 : 6;
 
     const numPages = (numItems % itemsPerPage) == 0 ? (numItems / itemsPerPage) : (numItems / itemsPerPage + 1)
 
@@ -54,8 +53,8 @@ const Pagination = ({ itemList }) => {
                 {countryList}
             </div>
             <div className="arrows">
-                <div className="prev" onClick={handlePrev}>Prev.</div>
-                <div className="next" onClick={handleNext}>Next</div>
+                <div className="prev" onClick={handlePrev}>&larr;</div>
+                <div className="next" onClick={handleNext}>&rarr;</div>
             </div>
             <div id="test"></div>
         </div>
