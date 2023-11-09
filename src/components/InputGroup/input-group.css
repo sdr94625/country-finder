@@ -63,9 +63,6 @@
         align-items: baseline;
     }
     
-    .name p{
-        color: white;
-    }
 }
 @media(min-width: 651px){
 
